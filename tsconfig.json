@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "typeRoots": ["./node_modules/@types", "./@types"],
+    "target": "es2017",
+    "module": "commonjs",
+    "moduleResolution": "node", //모듈 해석 방법 설정: 'node' (Node.js)
+    "esModuleInterop": true,
+    "strict": true,
+    "sourceMap": true,
+    "allowJs": true,
+    "checkJs": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "strictPropertyInitialization": false,
+    "baseUrl": "./", // 프로젝트의 기본 경로 지정
+    "paths": {
+      "@/*": ["src/*"] // '@' 를 'src/' 디렉터리로 리다이렉트
+    }
+
+  },
+  "include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.ts"]
+}
